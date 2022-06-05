@@ -22,15 +22,19 @@ public class Listeners implements Listener {
     public void onSleep(PlayerDeepSleepEvent e) {
         Player p = e.getPlayer();
 
-        if(p.isSleeping());
-            Bukkit.broadcastMessage(p.getName() + "が深い眠りにつきました");
+        if(p.isSleeping()) {
+            return;
+        }
+        Bukkit.broadcastMessage(p.getName() + "が深い眠りにつきました");
     }
+
     @EventHandler
     public void changeGM(PlayerGameModeChangeEvent e) {
         Player p = e.getPlayer();
 
         Bukkit.broadcastMessage(p.getName() + "がゲームモードを変更しました | 現在: " + p.getGameMode());
     }
+    
     @EventHandler
     public void tradePlayer(PlayerTradeEvent e) {
         Player p = e.getPlayer();
