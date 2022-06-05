@@ -1,0 +1,4 @@
+name: Odai A 3
+version: '${project.version}'
+main: odaia3.odaia3.OdaiA3
+api-version: 1.18
