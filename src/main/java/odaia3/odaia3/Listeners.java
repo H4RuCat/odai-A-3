@@ -34,7 +34,7 @@ public class Listeners implements Listener {
 
         Bukkit.broadcastMessage(p.getName() + "がゲームモードを変更しました | 現在: " + p.getGameMode());
     }
-    
+
     @EventHandler
     public void tradePlayer(PlayerTradeEvent e) {
         Player p = e.getPlayer();
